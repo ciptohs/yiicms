@@ -5,6 +5,8 @@ namespace backend\controllers;
 use Yii;
 use app\models\Album;
 use app\models\AlbumSearch;
+use app\models\Gallery;
+use app\models\GallerySearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
