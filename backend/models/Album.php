@@ -31,7 +31,7 @@ class Album extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['jdl_album', 'album_seo'], 'required'],
+            [['jdl_album','set_as', 'album_seo'], 'required'],
             [['aktif'], 'string'],
 			[['gbr_album'], 'file', 'skipOnEmpty' => true],
             [['jdl_album', 'album_seo'], 'string', 'max' => 100]
