@@ -49,6 +49,7 @@ class Album extends \yii\db\ActiveRecord
             'album_seo' => 'Album Seo',
             'gbr_album' => 'Gbr Album',
             'aktif' => 'Aktif',
+            'set_as'=>'Set As',
         ];
     }
 	public function getImageurl()
