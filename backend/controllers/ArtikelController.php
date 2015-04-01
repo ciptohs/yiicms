@@ -70,7 +70,7 @@ class ArtikelController extends Controller
 			$model->jam=date("H:i:s");
 			$model->save();
 			if (UploadedFile::getInstance($model, 'gambar')){             
-            	$model->gambar->saveAs('gambar/' . $model->gambar->baseName . '.' . $model->gambar->extension);
+            	$model->gambar->saveAs('picture/artikel/' . $model->gambar->baseName . '.' . $model->gambar->extension);
 			}
 			return $this->redirect(['view', 'id' => $model->id_berita]);
 			
